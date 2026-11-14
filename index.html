@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BURUNGUZ GYM — Dönüş Protokolü</title>
+<meta name="description" content="Winter Arc dönüş fazı: alt vücut güç + omuz/skapular rehab + kondisyon programı.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: { ink:'#0B0B0F', neon:'#CCFF00' },
+      fontFamily: { display:['Anton','sans-serif'], sans:['Inter','sans-serif'] }
+    }
+  }
+}
+</script>
+<style>
+  html{scroll-behavior:smooth}
+  body{background:#0B0B0F;color:#fff;font-family:'Inter',sans-serif}
+  .glass{background:rgba(20,20,26,.55);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.10)}
+  .tile{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}
+  .tile:hover{transform:translateY(-4px);border-color:rgba(204,255,0,.5);box-shadow:0 10px 40px -10px rgba(204,255,0,.25)}
+  .neon-text{color:#CCFF00}
+  .neon-btn{background:#CCFF00;color:#0B0B0F;transition:transform .2s ease,box-shadow .2s ease}
+  .neon-btn:hover{transform:translateY(-2px);box-shadow:0 8px 30px -6px rgba(204,255,0,.6)}
+  .grid-bg{background-image:radial-gradient(circle at 20% 10%,rgba(204,255,0,.10),transparent 40%),radial-gradient(circle at 85% 30%,rgba(204,255,0,.06),transparent 45%),linear-gradient(#0B0B0F,#0B0B0F)}
+  .ex{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px dashed rgba(255,255,255,.08);font-size:.92rem}
+  .ex:last-child{border-bottom:none}
+  .ex .n{color:#e5e7eb}
+  .ex .v{color:#CCFF00;font-weight:700;white-space:nowrap;font-variant-numeric:tabular-nums}
+  .chip{border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:4px 12px;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:#cbd5e1}
+  .eyebrow{letter-spacing:.3em;font-size:.7rem;text-transform:uppercase;color:#CCFF00}
+  ::selection{background:#CCFF00;color:#0B0B0F}
+</style>
+</head>
+<body class="grid-bg min-h-screen">
+
+<!-- NAVBAR -->
+<nav class="glass fixed top-0 inset-x-0 z-50">
+  <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
+    <a href="#top" class="flex items-center gap-2 font-display text-2xl tracking-wide">
+      <span class="w-2.5 h-2.5 rounded-full bg-neon shadow-[0_0_12px_#CCFF00]"></span>
+      BURUNGUZ<span class="neon-text">GYM</span>
+    </a>
+    <div class="hidden md:flex items-center gap-7 text-sm text-gray-300">
+      <a href="#rehab" class="hover:text-neon transition">Rehab</a>
+      <a href="#gym" class="hover:text-neon transition">Salon</a>
+      <a href="#ev" class="hover:text-neon transition">Ev</a>
+      <a href="#kondisyon" class="hover:text-neon transition">Kondisyon</a>
+    </div>
+    <a href="#rehab" class="neon-btn font-bold text-sm px-5 py-2 rounded-xl">Programı Aç</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header id="top" class="pt-32 pb-14 px-5">
+  <div class="max-w-6xl mx-auto">
+    <div class="glass rounded-3xl p-8 md:p-14 relative overflow-hidden">
+      <div class="absolute -right-10 -top-10 w-56 h-56 rounded-full bg-neon/10 blur-3xl"></div>
+      <p class="eyebrow mb-4">Winter Arc · Dönüş Fazı</p>
+      <h1 class="font-display text-5xl md:text-7xl leading-[0.95] tracking-tight">
+        DÖNÜŞ<br><span class="neon-text">PROTOKOLÜ</span>
+      </h1>
+      <p class="mt-5 max-w-xl text-gray-300 text-lg">
+        Omuz ve dirsek iyileşirken alt vücudu güçlendir, skapular rehabı yavaş yavaş başlat,
+        kondisyonu yürüyüşle koru. Üst vücut, doktor onayına kadar bekliyor.
+      </p>
+      <div class="mt-7 flex flex-wrap gap-2.5">
+        <span class="chip">2 salon günü</span>
+        <span class="chip">3 ev günü</span>
+        <span class="chip">günlük yürüyüş</span>
+        <span class="chip">rehab 3-4×/hf</span>
+      </div>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="#rehab" class="neon-btn font-bold px-6 py-3 rounded-xl">Rehab Bloğu</a>
+        <a href="#gym" class="glass px-6 py-3 rounded-xl font-semibold hover:border-neon/50 transition">Salon Programı</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- SAFETY -->
+<section class="px-5 pb-4">
+  <div class="max-w-6xl mx-auto tile rounded-2xl p-6 md:p-7 border-l-4" style="border-left-color:#CCFF00">
+    <p class="eyebrow mb-2">Güvenlik Kuralları</p>
+    <div class="grid md:grid-cols-2 gap-x-10 gap-y-2 text-sm text-gray-300">
+      <p>• Üst vücut <b class="text-white">yok</b> — doktor "yük bindirebilirsin" diyene kadar.</p>
+      <p>• Hepsi <b class="text-white">hafif ve ağrısız</b>; ağrı ya da parmak karıncalanması olan hareketi bırak.</p>
+      <p>• Kavrama <b class="text-white">minimum</b> (önkol siniri), bilek nötr, ağır çekişte strap.</p>
+      <p>• Omurgaya ağır squat yok → <b class="text-white">leg press</b> esas.</p>
+      <p>• Plank / şınav pozisyonu yok (omuza yük biner).</p>
+      <p>• Skolyoz asimetrik drilleri <b class="text-white">fizyoterapist</b> ayarlasın.</p>
+    </div>
+  </div>
+</section>
+
+<!-- REHAB -->
+<section id="rehab" class="px-5 py-8">
+  <div class="max-w-6xl mx-auto">
+    <div class="flex items-end justify-between mb-5">
+      <h2 class="font-display text-3xl md:text-4xl">OMUZ · SKAPULAR · DURUŞ <span class="neon-text">REHAB</span></h2>
+      <span class="chip">hafif · ağrısız · 3-4×/hf</span>
+    </div>
+    <div class="grid md:grid-cols-2 gap-5">
+      <div class="tile rounded-2xl p-6">
+        <div class="ex"><span class="n">Prone Y-T-W (ağırlıksız başla)</span><span class="v">2×8/harf</span></div>
+        <div class="ex"><span class="n">Band pull-apart / reverse fly</span><span class="v">2×15</span></div>
+        <div class="ex"><span class="n">Face pull (tepede dış rotasyon)</span><span class="v">2×12-15</span></div>
+      </div>
+      <div class="tile rounded-2xl p-6">
+        <div class="ex"><span class="n">Dış + iç rotasyon (dirsek 90°, hafif)</span><span class="v">2×12-15</span></div>
+        <div class="ex"><span class="n">Scapular wall slide</span><span class="v">2×10</span></div>
+        <div class="ex"><span class="n">Bird-dog (çapraz kol-bacak)</span><span class="v">2×8/taraf</span></div>
+      </div>
+    </div>
+    <p class="text-xs text-gray-500 mt-3">Bird-dog omuzu rahatsız ederse: yüzüstü yatıp çapraz kol+bacak kaldırma (yük taşımadan).</p>
+  </div>
+</section>
+
+<!-- GYM -->
+<section id="gym" class="px-5 py-8">
+  <div class="max-w-6xl mx-auto">
+    <div class="flex items-end justify-between mb-5">
+      <h2 class="font-display text-3xl md:text-4xl">SALONA <span class="neon-text">GİDEBİLİRSEN</span></h2>
+      <span class="chip">haftada 2 (ops. 3)</span>
+    </div>
+    <div class="grid md:grid-cols-2 gap-5">
+      <div class="tile rounded-2xl p-6">
+        <p class="eyebrow mb-3">Gün A — Quad + Tek Taraflı + Tibialis</p>
+        <div class="ex"><span class="n">Leg Press (ayak aşağı/dar)</span><span class="v">4×8-12</span></div>
+        <div class="ex"><span class="n">Bulgarian split squat / lunge</span><span class="v">3×10/bacak</span></div>
+        <div class="ex"><span class="n">Leg Extension</span><span class="v">3×12-15</span></div>
+        <div class="ex"><span class="n">Standing Calf</span><span class="v">4×12-15</span></div>
+        <div class="ex"><span class="n">Tibialis raise</span><span class="v">3×15-20</span></div>
+        <div class="ex"><span class="n">+ Rehab bloğu + core</span><span class="v">—</span></div>
+      </div>
+      <div class="tile rounded-2xl p-6">
+        <p class="eyebrow mb-3">Gün B — Posterior + Patlayıcılık</p>
+        <div class="ex"><span class="n">Hip Thrust</span><span class="v">3×10-12</span></div>
+        <div class="ex"><span class="n">Lying/Seated Leg Curl</span><span class="v">4×10-12</span></div>
+        <div class="ex"><span class="n">Step-up (yüksek basamak)</span><span class="v">3×10/bacak</span></div>
+        <div class="ex"><span class="n">Hip Abduction</span><span class="v">3×12-15</span></div>
+        <div class="ex"><span class="n">Seated Calf</span><span class="v">4×12-15</span></div>
+        <div class="ex"><span class="n">Ops. pogo hops / box jump</span><span class="v">3×5-8</span></div>
+      </div>
+    </div>
+    <p class="text-xs text-gray-500 mt-3">Progresyon: tüm setlerde aralığın üstüne RIR 1-2'de ulaştın → ağırlık çık. Makine izolasyonlarda failure'a yaklaşabilirsin; leg press RIR 1-2.</p>
+  </div>
+</section>
+
+<!-- EV -->
+<section id="ev" class="px-5 py-8">
+  <div class="max-w-6xl mx-auto">
+    <div class="flex items-end justify-between mb-5">
+      <h2 class="font-display text-3xl md:text-4xl">SALONA <span class="neon-text">GİDEMEZSEN</span></h2>
+      <span class="chip">ev · haftada 3 · 15-25 dk</span>
+    </div>
+    <div class="grid md:grid-cols-3 gap-5">
+      <div class="tile rounded-2xl p-6 md:col-span-2">
+        <p class="eyebrow mb-3">Bodyweight Alt Vücut + Core</p>
+        <div class="grid sm:grid-cols-2 gap-x-8">
+          <div>
+            <div class="ex"><span class="n">Vücut ağırlığı squat</span><span class="v">3×15-20</span></div>
+            <div class="ex"><span class="n">Split squat / hamle</span><span class="v">3×10-12/bacak</span></div>
+            <div class="ex"><span class="n">Tek bacak glute bridge</span><span class="v">3×12-15</span></div>
+          </div>
+          <div>
+            <div class="ex"><span class="n">Wall sit</span><span class="v">3×40 sn</span></div>
+            <div class="ex"><span class="n">Calf + Tibialis raise</span><span class="v">3×15-20</span></div>
+            <div class="ex"><span class="n">Core: bird-dog + dead bug + ters crunch</span><span class="v">3 set</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="tile rounded-2xl p-6 flex flex-col justify-center">
+        <p class="eyebrow mb-2">Zorlaştırma</p>
+        <p class="text-sm text-gray-300">Ağırlık ekleyemediğin için <b class="text-white">tempo + tekrar + tek bacak</b> ile zorlaştır: yavaşlat, dipte 1-2 sn beklet, tek bacak varyanta geç.</p>
+        <p class="text-sm text-gray-300 mt-3">+ Rehab bloğunu buraya da ekle.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KONDISYON -->
+<section id="kondisyon" class="px-5 py-8 pb-16">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="font-display text-3xl md:text-4xl mb-5">KONDİSYON <span class="neon-text">& DÖVÜŞ</span></h2>
+    <div class="grid md:grid-cols-3 gap-5">
+      <div class="tile rounded-2xl p-6">
+        <p class="eyebrow mb-2">Yürüyüş</p>
+        <p class="text-sm text-gray-300">Günlük 55 dk / 11-16k adım = kardiyo + NEAT. Bu yeterli, ekstra kardiyoya gerek yok.</p>
+      </div>
+      <div class="tile rounded-2xl p-6">
+        <p class="eyebrow mb-2">Koşu</p>
+        <p class="text-sm text-gray-300">Banda binme (tibialis kramp). Dışarıda yürüyüşe 1-2 dk tempo artışı (walk-jog) ekle, kademeli.</p>
+      </div>
+      <div class="tile rounded-2xl p-6">
+        <p class="eyebrow mb-2">Dövüş</p>
+        <p class="text-sm text-gray-300">Tekme + ayak oyunu + mobilite. Gard gevşek, <b class="text-white">yumruk yok</b> (omuz).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="border-t border-white/10 px-5 py-8">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-gray-500">
+    <p class="font-display text-lg tracking-wide text-white">BURUNGUZ<span class="neon-text">GYM</span></p>
+    <p>Bu plan tıbbi tedavinin yerine geçmez · ağrı/karıncalanma olursa dur, doktoruna danış.</p>
+  </div>
+</footer>
+
+</body>
+</html>
