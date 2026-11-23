@@ -49,9 +49,13 @@ tailwind.config = {
     </a>
     <div class="hidden md:flex items-center gap-7 text-sm text-gray-300">
       <a href="#rehab" class="hover:text-neon transition">Rehab</a>
+      <a href="#ust" class="hover:text-neon transition">Üst</a>
+      <a href="#ergonomi" class="hover:text-neon transition">Ergonomi</a>
       <a href="#gym" class="hover:text-neon transition">Salon</a>
       <a href="#ev" class="hover:text-neon transition">Ev</a>
       <a href="#kondisyon" class="hover:text-neon transition">Kondisyon</a>
+      <a href="#diyet" class="hover:text-neon transition">Diyet</a>
+      <a href="#takviye" class="hover:text-neon transition">Takviye</a>
     </div>
     <a href="#rehab" class="neon-btn font-bold text-sm px-5 py-2 rounded-xl">Programı Aç</a>
   </div>
@@ -67,8 +71,8 @@ tailwind.config = {
         DÖNÜŞ<br><span class="neon-text">PROTOKOLÜ</span>
       </h1>
       <p class="mt-5 max-w-xl text-gray-300 text-lg">
-        Omuz ve dirsek iyileşirken alt vücudu güçlendir, skapular rehabı yavaş yavaş başlat,
-        kondisyonu yürüyüşle koru. Üst vücut, doktor onayına kadar bekliyor.
+        Antrenman ortopedist onaylı — yavaş başla, kademeli ağırlaştır. Üst vücudu
+        Pull + Rehab önceliğiyle geri al, Push'u hafif tut; ergonomi artık tedavinin kendisi.
       </p>
       <div class="mt-7 flex flex-wrap gap-2.5">
         <span class="chip">2 salon günü</span>
@@ -89,11 +93,12 @@ tailwind.config = {
   <div class="max-w-6xl mx-auto tile rounded-2xl p-6 md:p-7 border-l-4" style="border-left-color:#CCFF00">
     <p class="eyebrow mb-2">Güvenlik Kuralları</p>
     <div class="grid md:grid-cols-2 gap-x-10 gap-y-2 text-sm text-gray-300">
-      <p>• Üst vücut <b class="text-white">yok</b> — doktor "yük bindirebilirsin" diyene kadar.</p>
-      <p>• Hepsi <b class="text-white">hafif ve ağrısız</b>; ağrı ya da parmak karıncalanması olan hareketi bırak.</p>
-      <p>• Kavrama <b class="text-white">minimum</b> (önkol siniri), bilek nötr, ağır çekişte strap.</p>
-      <p>• Omurgaya ağır squat yok → <b class="text-white">leg press</b> esas.</p>
-      <p>• Plank / şınav pozisyonu yok (omuza yük biner).</p>
+      <p>• Antrenman <b class="text-white">ortopedist onaylı</b> → yavaş başla, kademeli ağırlaştır.</p>
+      <p>• Öncelik <b class="text-white">Pull + Rehab</b>; Push hafif/yatay, overhead press yok (nüks etmesin).</p>
+      <p>• Sağ el/önkol: yazılımcı tipi sinir sıkışması → <b class="text-white">ergonomi artık tedavi</b> (önlem yoksa kalıcı olur).</p>
+      <p>• <b class="text-white">Bilek nötr</b>, sağ ağır kavrama minimum, çekişte strap.</p>
+      <p>• Hepsi hafif ve <b class="text-white">ağrısız</b>; ağrı/karıncalanma olan hareketi bırak.</p>
+      <p>• Omurgaya ağır squat yok → <b class="text-white">leg press</b> esas. Plank/şınav yok.</p>
       <p>• Skolyoz asimetrik drilleri <b class="text-white">fizyoterapist</b> ayarlasın.</p>
     </div>
   </div>
@@ -106,19 +111,96 @@ tailwind.config = {
       <h2 class="font-display text-3xl md:text-4xl">OMUZ · SKAPULAR · DURUŞ <span class="neon-text">REHAB</span></h2>
       <span class="chip">hafif · ağrısız · 3-4×/hf</span>
     </div>
+    <div class="tile rounded-2xl p-5 mb-5 border-l-4" style="border-left-color:#CCFF00">
+      <p class="eyebrow mb-2">Sağ Taraf Önceliği</p>
+      <p class="text-sm text-gray-300">Sağ arka omuz/kürek belirgin zayıf. Her hareketi <b class="text-white">önce zayıf sağdan</b> yap, solu ona eşitle (solu daha ağır/çok yapma). Sağın "hiç çalışmamış gibi yanması / gücünün bitmesi" = kasın nihayet devreye girmesi, <b class="text-white">normal</b> — hafif tut, forma odaklan. Bu hafif skapular iş aynı zamanda <b class="text-white">sırt güçlendirmen</b>; ağır grip'li row/pulldown nöroloji sonrası.</p>
+    </div>
     <div class="grid md:grid-cols-2 gap-5">
       <div class="tile rounded-2xl p-6">
-        <div class="ex"><span class="n">Prone Y-T-W (ağırlıksız başla)</span><span class="v">2×8/harf</span></div>
-        <div class="ex"><span class="n">Band pull-apart / reverse fly</span><span class="v">2×15</span></div>
-        <div class="ex"><span class="n">Face pull (tepede dış rotasyon)</span><span class="v">2×12-15</span></div>
+        <div class="ex"><span class="n">Prone Y-T-W (ağırlıksız) — sağ zorsa +1 set</span><span class="v">2×8/harf</span></div>
+        <div class="ex"><span class="n">Band pull-apart / reverse fly — sağda kürekleri değdir</span><span class="v">2×15</span></div>
+        <div class="ex"><span class="n">Face pull (dış rotasyon) — sağ bitiyorsa yük düşür, +1 set</span><span class="v">2×12-15</span></div>
       </div>
       <div class="tile rounded-2xl p-6">
-        <div class="ex"><span class="n">Dış + iç rotasyon (dirsek 90°, hafif)</span><span class="v">2×12-15</span></div>
-        <div class="ex"><span class="n">Scapular wall slide</span><span class="v">2×10</span></div>
-        <div class="ex"><span class="n">Bird-dog (çapraz kol-bacak)</span><span class="v">2×8/taraf</span></div>
+        <div class="ex"><span class="n">Dış+iç rotasyon (dirsek 90°) — SAĞ 2-3 kg, tek kol, sağa +1 set</span><span class="v">2×12-15</span></div>
+        <div class="ex"><span class="n">Scapular wall slide (normal wall slide çok zorsa bunda kal)</span><span class="v">2×10</span></div>
+        <div class="ex"><span class="n">Bird-dog — kolaysa dipte 2 sn beklet, yavaş tempo</span><span class="v">2×8/taraf</span></div>
       </div>
     </div>
-    <p class="text-xs text-gray-500 mt-3">Bird-dog omuzu rahatsız ederse: yüzüstü yatıp çapraz kol+bacak kaldırma (yük taşımadan).</p>
+    <p class="text-xs text-gray-500 mt-3">Bird-dog omuzu rahatsız ederse: yüzüstü çapraz kol+bacak kaldırma (yük taşımadan).</p>
+    <p class="text-xs text-gray-500 mt-2"><b class="text-gray-300">Sonra eklenecek — bara asılma:</b> aktif/skapular (omuz kulağa gitmeden, sırttan tut). Nöroloji el/sinir temizleyince + omuz sağlamlaşınca 5-10 sn kısa tutuşlarla başla. Şimdi değil: grip + baş üstü yük sağ el/sinirini ve biceps tendonunu zorlar.</p>
+  </div>
+</section>
+
+<!-- UST VUCUT -->
+<section id="ust" class="px-5 py-8">
+  <div class="max-w-6xl mx-auto">
+    <div class="flex items-end justify-between mb-5 flex-wrap gap-3">
+      <h2 class="font-display text-3xl md:text-4xl">ÜST VÜCUT <span class="neon-text">DÖNÜŞÜ</span></h2>
+      <span class="chip">pull &gt; push · hafif başla</span>
+    </div>
+    <div class="tile rounded-2xl p-5 mb-5 border-l-4" style="border-left-color:#CCFF00">
+      <p class="text-sm text-gray-300">Basış (Push) omzu azdıran yön; arka omuz/kürek güçlenince impingement düzelir. O yüzden <b class="text-white">Pull + Rehab öncelik</b>, Push hafif idame. Eski yükün ~%50-60'ından başla, RIR 2-3, hafta sorunsuzsa biraz ağırlaştır. Bilek nötr + çekişte strap.</p>
+    </div>
+    <div class="grid md:grid-cols-2 gap-5">
+      <div class="tile rounded-2xl p-6">
+        <p class="eyebrow mb-3">Pull — Öncelik (bilek nötr + strap)</p>
+        <div class="ex"><span class="n">Chest-supported row (makine)</span><span class="v">3×10-12</span></div>
+        <div class="ex"><span class="n">Neutral lat pulldown (strap)</span><span class="v">3×10-12</span></div>
+        <div class="ex"><span class="n">Rear-delt reverse fly — sağa +1 set</span><span class="v">3×15</span></div>
+        <div class="ex"><span class="n">Face pull (dış rotasyon) — sağ öncelik</span><span class="v">2-3×15</span></div>
+        <div class="ex"><span class="n">Hammer curl (hafif, nötr)</span><span class="v">2×12-15</span></div>
+      </div>
+      <div class="tile rounded-2xl p-6">
+        <p class="eyebrow mb-3">Push — Hafif İdame (overhead YOK)</p>
+        <div class="ex"><span class="n">Machine chest press (yatay, kontrollü ROM)</span><span class="v">2-3×10-12</span></div>
+        <div class="ex"><span class="n">Incline machine press (hafif, ağrısızsa)</span><span class="v">2×10-12</span></div>
+        <div class="ex"><span class="n">Lateral raise (hafif, omuz hizası, başparmak yukarı)</span><span class="v">3×12-20</span></div>
+        <div class="ex"><span class="n">Triceps pushdown</span><span class="v">2×12-15</span></div>
+        <p class="text-xs text-gray-500 mt-3">Overhead/omuz press yok · derin fly yok · failure yok. Omuzda ağrı/sıkışma hissinde o hareketi kes.</p>
+      </div>
+    </div>
+
+    <h3 class="font-display text-2xl mt-8 mb-3">Haftalık <span class="neon-text">Yapı</span></h3>
+    <div class="overflow-x-auto rounded-2xl border border-white/10">
+      <table class="w-full text-sm min-w-[520px] border-collapse">
+        <thead><tr class="bg-white/5 text-left text-gray-400 uppercase text-xs tracking-wider"><th class="p-3">Gün</th><th class="p-3">Program</th></tr></thead>
+        <tbody class="text-gray-300">
+          <tr class="border-t border-white/5"><td class="p-3 neon-text font-bold">Gün 1</td><td class="p-3">Pull + Rehab</td></tr>
+          <tr class="border-t border-white/5 bg-white/[0.02]"><td class="p-3 neon-text font-bold">Gün 2</td><td class="p-3">Legs — Alt A</td></tr>
+          <tr class="border-t border-white/5"><td class="p-3 neon-text font-bold">Gün 3</td><td class="p-3">Rehab + hafif Push</td></tr>
+          <tr class="border-t border-white/5 bg-white/[0.02]"><td class="p-3 neon-text font-bold">Gün 4</td><td class="p-3">Legs — Alt B</td></tr>
+          <tr class="border-t border-white/5"><td class="p-3 neon-text font-bold">Gün 5</td><td class="p-3">Pull + Rehab</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-xs text-gray-500 mt-3">Pull 2× / Rehab 3× / Push 1× / Legs 2× + günlük yürüyüş. Az gün yaptığın hafta: önce Rehab + Pull + Legs; Push'u yer kalırsa ekle, atlarsan sorun değil.</p>
+  </div>
+</section>
+
+<!-- ERGONOMI -->
+<section id="ergonomi" class="px-5 py-8">
+  <div class="max-w-6xl mx-auto">
+    <div class="flex items-end justify-between mb-5 flex-wrap gap-3">
+      <h2 class="font-display text-3xl md:text-4xl">ERGONOMİ <span class="neon-text">/ ÖNLEM</span></h2>
+      <span class="chip">bu artık tedavi</span>
+    </div>
+    <div class="tile rounded-2xl p-5 mb-5 border-l-4" style="border-left-color:#CCFF00">
+      <p class="text-sm text-gray-300">Nöroloji: yazılımcılarda yaygın bir sinir sıkışması — <b class="text-white">önlem alınmazsa kalıcı olur.</b> Yani ergonomi "iyi olur" değil, tedavinin kendisi. Günlük sabit rutin.</p>
+    </div>
+    <div class="grid md:grid-cols-2 gap-5">
+      <div class="tile rounded-2xl p-6 text-sm text-gray-300 space-y-2">
+        <p>• <b class="text-white">Bilek nötr</b> — ne yukarı ne aşağı bükük; klavye/mouse bileği düz tutacak yükseklikte.</p>
+        <p>• <b class="text-white">Dirsek ~90-100°</b>, önkol desteğe yaslı; dirseği sert kenara dayama (bası sinire biner).</p>
+        <p>• Mümkünse <b class="text-white">ergonomik/dikey mouse</b> + bilek destekli mousepad.</p>
+      </div>
+      <div class="tile rounded-2xl p-6 text-sm text-gray-300 space-y-2">
+        <p>• Monitör <b class="text-white">göz hizasında</b> (boyun için de iyi).</p>
+        <p>• <b class="text-white">30-40 dk'da bir mikro mola</b>: kalk, bileği + kolu salla, 1-2 dk.</p>
+        <p>• Telefonu uzun süre bükük tutma; uykuda bileği/dirseği aşırı bükük yatma.</p>
+        <p>• Fizyoterapist median sinir glide verirse yap.</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -143,10 +225,10 @@ tailwind.config = {
         <p class="eyebrow mb-3">Gün B — Posterior + Patlayıcılık</p>
         <div class="ex"><span class="n">Hip Thrust</span><span class="v">3×10-12</span></div>
         <div class="ex"><span class="n">Lying/Seated Leg Curl</span><span class="v">4×10-12</span></div>
-        <div class="ex"><span class="n">Step-up (yüksek basamak)</span><span class="v">3×10/bacak</span></div>
+        <div class="ex"><span class="n">Step-up — 2-3 sn kontrollü iniş, zayıf bacağa +1 set</span><span class="v">3×10/bacak</span></div>
         <div class="ex"><span class="n">Hip Abduction</span><span class="v">3×12-15</span></div>
         <div class="ex"><span class="n">Seated Calf</span><span class="v">4×12-15</span></div>
-        <div class="ex"><span class="n">Ops. pogo hops / box jump</span><span class="v">3×5-8</span></div>
+        <div class="ex"><span class="n">Ops. pogo/box jump — DÜŞÜK & kalite (tibialis azdırıyorsa bırak; önce tibialis raise)</span><span class="v">8-10 temas / 10-15 sn</span></div>
       </div>
     </div>
     <p class="text-xs text-gray-500 mt-3">Progresyon: tüm setlerde aralığın üstüne RIR 1-2'de ulaştın → ağırlık çık. Makine izolasyonlarda failure'a yaklaşabilirsin; leg press RIR 1-2.</p>
@@ -202,6 +284,151 @@ tailwind.config = {
         <p class="eyebrow mb-2">Dövüş</p>
         <p class="text-sm text-gray-300">Tekme + ayak oyunu + mobilite. Gard gevşek, <b class="text-white">yumruk yok</b> (omuz).</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIYET -->
+<section id="diyet" class="px-5 py-8">
+  <div class="max-w-6xl mx-auto">
+    <div class="flex items-end justify-between mb-5 flex-wrap gap-3">
+      <h2 class="font-display text-3xl md:text-4xl">1 HAFTALIK <span class="neon-text">DİYET</span></h2>
+      <div class="flex flex-wrap gap-2">
+        <span class="chip">~2300 kcal</span><span class="chip">170g protein</span>
+        <span class="chip">75g yağ</span><span class="chip">~210g carb</span><span class="chip">2.5-3 L su</span>
+      </div>
+    </div>
+    <div class="tile rounded-2xl p-5 mb-5 text-sm text-gray-300 border-l-4" style="border-left-color:#CCFF00">
+      Aya'nın yapısı + yüksek protein ayarı. Her öğünde <b class="text-white">A / B / C</b> alternatifinden birini seç
+      (ofiste dışarıda yersen B seçenekleri). Şekerli/gazlı yok (soda serbest), kızartma az.
+      Elinde olmayan bir şey olursa yaz — olanlardan ayarlarız.
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-5">
+      <div class="tile rounded-2xl p-6">
+        <div class="flex items-center justify-between mb-3"><p class="eyebrow">Kahvaltı</p><span class="neon-text font-bold text-sm">~30g protein</span></div>
+        <p class="text-sm text-gray-300 mb-1.5"><b class="neon-text">A</b> — 3 yumurta (omlet/haşlanmış) + 2 dilim beyaz peynir/süzme + salatalık-domates + 1 dilim tam tahıl ekmek + 5-6 zeytin</p>
+        <p class="text-sm text-gray-300 mb-1.5"><b class="neon-text">B</b> — 3 yumurtalı menemen + süzme peynir + 1 dilim ekmek</p>
+        <p class="text-sm text-gray-300"><b class="neon-text">C</b> — 200g süzme/labne kâse + 2 ceviz + 1 meyve + 1 dilim ekmek</p>
+        <p class="text-xs text-gray-500 mt-2">Sucuk/hindi füme haftada 2-3, 2 dilim.</p>
+      </div>
+      <div class="tile rounded-2xl p-6">
+        <div class="flex items-center justify-between mb-3"><p class="eyebrow">Ara Öğün 1</p><span class="neon-text font-bold text-sm">~15g protein</span></div>
+        <p class="text-sm text-gray-300 mb-1.5"><b class="neon-text">A</b> — 1 kâse yoğurt + doğranmış meyve</p>
+        <p class="text-sm text-gray-300 mb-1.5"><b class="neon-text">B</b> — 1 bardak kefir + 1 meyve</p>
+        <p class="text-sm text-gray-300"><b class="neon-text">C</b> — 1 kâse süzme yoğurt + 4 kuru kayısı</p>
+      </div>
+      <div class="tile rounded-2xl p-6">
+        <div class="flex items-center justify-between mb-3"><p class="eyebrow">Öğle</p><span class="neon-text font-bold text-sm">~40g protein</span></div>
+        <p class="text-sm text-gray-300 mb-1.5"><b class="neon-text">A</b> (ev) — 150-200g ızgara tavuk/köfte/balık + bol salata + 3-4 yk pirinç/bulgur</p>
+        <p class="text-sm text-gray-300 mb-1.5"><b class="neon-text">B</b> (ofis) — ızgara tavuk dürüm (az lavaş) veya köfte porsiyon + salata (pilav az)</p>
+        <p class="text-sm text-gray-300"><b class="neon-text">C</b> — 75-100g ton balığı + bol salata + 2 wasa/karabuğday gevreği</p>
+        <p class="text-xs text-gray-500 mt-2">Ofiste döner/pilav yerine ızgara tercih et.</p>
+      </div>
+      <div class="tile rounded-2xl p-6">
+        <div class="flex items-center justify-between mb-3"><p class="eyebrow">Ara 2 · Antrenman çevresi</p><span class="neon-text font-bold text-sm">~25g protein</span></div>
+        <p class="text-sm text-gray-300 mb-1.5"><b class="neon-text">A</b> — 1 ölçek protein tozu + 1 muz</p>
+        <p class="text-sm text-gray-300 mb-1.5"><b class="neon-text">B</b> — 1 bardak kefir + protein tozu</p>
+        <p class="text-sm text-gray-300"><b class="neon-text">C</b> — 1 kâse süzme yoğurt + meyve</p>
+        <p class="text-xs text-gray-500 mt-2">Antrenman öncesi: muz/kuru kayısı ön yakıt.</p>
+      </div>
+      <div class="tile rounded-2xl p-6">
+        <div class="flex items-center justify-between mb-3"><p class="eyebrow">Akşam</p><span class="neon-text font-bold text-sm">~45g protein</span></div>
+        <p class="text-sm text-gray-300 mb-1.5"><b class="neon-text">A</b> — 200g tavuk/et/balık + sebze/salata + 3-4 yk karbonhidrat (pirinç/patates/bulgur)</p>
+        <p class="text-sm text-gray-300 mb-1.5"><b class="neon-text">B</b> — 8 yk etli sebze/kurubaklagil + 1 kâse cacık + bol salata</p>
+        <p class="text-sm text-gray-300"><b class="neon-text">C</b> — 200g balık + bol yeşillik + az patates</p>
+      </div>
+      <div class="tile rounded-2xl p-6">
+        <div class="flex items-center justify-between mb-3"><p class="eyebrow">Gece (acıkırsan)</p><span class="neon-text font-bold text-sm">~10g protein</span></div>
+        <p class="text-sm text-gray-300 mb-1.5"><b class="neon-text">A</b> — 3 yk yoğurt + tarçın / az pulbiber-limon</p>
+        <p class="text-sm text-gray-300 mb-1.5"><b class="neon-text">B</b> — 10 çiğ badem</p>
+        <p class="text-sm text-gray-300"><b class="neon-text">C</b> — 1 meyve (muz/elma)</p>
+      </div>
+    </div>
+
+    <h3 class="font-display text-2xl mt-8 mb-3">7 Günlük <span class="neon-text">Varyasyon</span></h3>
+    <div class="overflow-x-auto rounded-2xl border border-white/10">
+      <table class="w-full text-sm min-w-[600px] border-collapse">
+        <thead>
+          <tr class="bg-white/5 text-left text-gray-400 uppercase text-xs tracking-wider">
+            <th class="p-3">Gün</th><th class="p-3">Kahvaltı</th><th class="p-3">Öğle</th><th class="p-3">Akşam</th>
+          </tr>
+        </thead>
+        <tbody class="text-gray-300">
+          <tr class="border-t border-white/5"><td class="p-3 neon-text font-bold">Pzt</td><td class="p-3">A</td><td class="p-3">Izgara tavuk + bulgur + salata</td><td class="p-3">Et + sebze + salata</td></tr>
+          <tr class="border-t border-white/5 bg-white/[0.02]"><td class="p-3 neon-text font-bold">Sal</td><td class="p-3">B (menemen)</td><td class="p-3">Ton balığı salata + wasa</td><td class="p-3">Balık + patates + yeşillik</td></tr>
+          <tr class="border-t border-white/5"><td class="p-3 neon-text font-bold">Çar</td><td class="p-3">A</td><td class="p-3">Köfte + salata + az pilav</td><td class="p-3">Etli kurubaklagil + cacık</td></tr>
+          <tr class="border-t border-white/5 bg-white/[0.02]"><td class="p-3 neon-text font-bold">Per</td><td class="p-3">C (süzme)</td><td class="p-3">Izgara tavuk dürüm (ofis) + salata</td><td class="p-3">Tavuk + pirinç + sebze</td></tr>
+          <tr class="border-t border-white/5"><td class="p-3 neon-text font-bold">Cum</td><td class="p-3">A</td><td class="p-3">Balık + salata + bulgur</td><td class="p-3">Köfte + sebze yemeği</td></tr>
+          <tr class="border-t border-white/5 bg-white/[0.02]"><td class="p-3 neon-text font-bold">Cmt</td><td class="p-3">B</td><td class="p-3">Izgara tavuk/köfte + salata</td><td class="p-3">Et + bulgur + cacık</td></tr>
+          <tr class="border-t border-white/5"><td class="p-3 neon-text font-bold">Paz</td><td class="p-3">A</td><td class="p-3">Tavuk + az pilav + salata</td><td class="p-3">Balık + bol yeşillik</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-xs text-gray-500 mt-3">Ara öğünler her gün sabit: Ara 1 (yoğurt/kefir + meyve) · Ara 2 antrenman çevresi (protein tozu + muz) · Gece (yoğurt/badem). Günlük 2.5-3 L su, kahve 3-4 fincan.</p>
+    <p class="text-xs text-gray-500 mt-2">Not: Bu genel bir çerçeve, tıbbi/diyetisyen takibinin yerine geçmez. İmkân bulunca bir uzmana tekrar görün.</p>
+  </div>
+</section>
+
+<!-- TAKVIYE -->
+<section id="takviye" class="px-5 py-8">
+  <div class="max-w-6xl mx-auto">
+    <div class="flex items-end justify-between mb-5 flex-wrap gap-3">
+      <h2 class="font-display text-3xl md:text-4xl">TAKVİYE <span class="neon-text">ZAMANLAMASI</span></h2>
+      <span class="chip">hepsi yemekle</span>
+    </div>
+
+    <p class="text-sm text-gray-400 mb-4">Aç karına (öğün <b class="text-white">öncesi</b>) alınacak takviyen yok — hepsi mide ve emilim için <b class="text-white">öğünle birlikte</b>, magnezyum ise <b class="text-white">öğünden sonra / yatmadan</b>.</p>
+    <div class="overflow-x-auto rounded-2xl border border-white/10 mb-5">
+      <table class="w-full text-sm min-w-[720px] border-collapse">
+        <thead>
+          <tr class="bg-white/5 text-left text-gray-400 uppercase text-xs tracking-wider">
+            <th class="p-3">Zaman</th><th class="p-3">Takviye</th><th class="p-3">Öğüne göre</th><th class="p-3">Neden</th>
+          </tr>
+        </thead>
+        <tbody class="text-gray-300">
+          <tr class="border-t border-white/5">
+            <td class="p-3 neon-text font-bold whitespace-nowrap">Kahvaltı</td>
+            <td class="p-3">Multivitamin for men<br>D3+K2 damla<br>Omega-3 kapsül</td>
+            <td class="p-3 whitespace-nowrap">Öğünle birlikte<br><span class="text-gray-500 text-xs">yağlı öğün</span></td>
+            <td class="p-3">Yağda çözünür vitaminler yağla emilir; B grubu sabah enerji verir.</td>
+          </tr>
+          <tr class="border-t border-white/5 bg-white/[0.02]">
+            <td class="p-3 neon-text font-bold whitespace-nowrap">Öğle</td>
+            <td class="p-3">Zinc (L-OptiZinc)</td>
+            <td class="p-3 whitespace-nowrap">Öğünle birlikte</td>
+            <td class="p-3">Magnezyumdan ayrı (emilimde yarışır); aç karına mide bulandırır.</td>
+          </tr>
+          <tr class="border-t border-white/5">
+            <td class="p-3 neon-text font-bold whitespace-nowrap">Akşam</td>
+            <td class="p-3">Ashwagandha</td>
+            <td class="p-3 whitespace-nowrap">Öğünle birlikte</td>
+            <td class="p-3">Gevşeme, kortizol ve uyku desteği; geç yatışında akşam mantıklı.</td>
+          </tr>
+          <tr class="border-t border-white/5 bg-white/[0.02]">
+            <td class="p-3 neon-text font-bold whitespace-nowrap">Yatmadan</td>
+            <td class="p-3">Magnesium (Ocean ExtraMag)</td>
+            <td class="p-3 whitespace-nowrap">Öğünden sonra / yatmadan</td>
+            <td class="p-3">Kas gevşemesi + uyku kalitesi. Çinkodan ayrı tutmak için gece.</td>
+          </tr>
+          <tr class="border-t border-white/5">
+            <td class="p-3 neon-text font-bold whitespace-nowrap">Opsiyonel · kış</td>
+            <td class="p-3">Vitamin C (~200-500 mg)</td>
+            <td class="p-3 whitespace-nowrap">Öğünle birlikte<br><span class="text-gray-500 text-xs">sabah/öğle</span></td>
+            <td class="p-3">Düzenli düşük doz; "1 hafta yükleme" işe yaramaz (C depolanmaz).</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tile rounded-2xl p-6 border-l-4 text-sm text-gray-300" style="border-left-color:#CCFF00">
+      <p class="eyebrow mb-2">Dikkat</p>
+      <p class="mb-1.5">• <b class="text-white">Çinko + magnezyumu aynı anda alma</b> — emilimde yarışır. Öğle (çinko) / gece (magnezyum).</p>
+      <p class="mb-1.5">• <b class="text-white">Multivitamin zaten çinko + D içerir.</b> Günlük toplam çinko 40 mg'ı, toplam D 4000 IU'yu (kan testi yoksa) geçmesin. Multivit çinkosu yüksekse standalone çinkoyu haftada 3-4 gün al.</p>
+      <p class="mb-1.5">• Hepsini <b class="text-white">yemekle</b> al — aç karına çinko/omega mide bozar.</p>
+      <p class="mb-1.5">• Ashwagandha: tiroid ilacı veya özel bir durumun varsa önce doktoruna sor.</p>
+      <p class="mb-1.5">• <b class="text-white">Vitamin C:</b> 1 haftalık "yükleme" işe yaramaz — C suda çözünür, fazlası atılır, depolanmaz. Kışın istersen günde ~200-500 mg düzenli; &gt;1000 mg fazlası atılır, mide/ishal yapar. Multivitamininde zaten C var.</p>
+      <p>• En doğru doz için D ve çinkoyu <b class="text-white">kan değerine</b> göre ayarlamak ideal.</p>
     </div>
   </div>
 </section>
